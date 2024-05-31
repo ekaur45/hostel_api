@@ -1,12 +1,21 @@
-import http from 'http';
-var express = require('express');
-var jsonServer = require('json-server');
+const express = require("express");
+const app = express();
 
-var server = express();
-server.use('/api', jsonServer.router('db.json'));
-server.listen(3000)
-//http.createServer(server).listen(300);
-module.exports = server;
+app.get("/", (req, res) => res.send("Express on Vercel"));
+
+app.listen(3000, () => console.log("Server ready on port 3000."));
+
+module.exports = app;
+
+// import http from 'http';
+// var express = require('express');
+// var jsonServer = require('json-server');
+
+// var server = express();
+// server.use('/api', jsonServer.router('db.json'));
+// server.listen(3000)
+// //http.createServer(server).listen(300);
+// module.exports = server;
 // ...
 
 // You may want to mount JSON Server on a specific end-point, for example /api
