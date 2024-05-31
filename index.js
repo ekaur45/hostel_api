@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
-
+var jsonServer = require('json-server');
 app.get("/", (req, res) => res.send("Express on Vercel"));
-
-app.listen(3000, () => console.log("Server ready on port 3000."));
+app.use(jsonServer);
+//app.listen(3000, () => console.log("Server ready on port 3000."));
 
 module.exports = app;
 
