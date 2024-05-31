@@ -4,7 +4,9 @@ var jsonServer = require('json-server');
 
 var server = express();
 server.use('/api', jsonServer.router('db.json'));
-http.createServer(server).listen(300);
+server.listen(3000)
+//http.createServer(server).listen(300);
+module.exports = server;
 // ...
 
 // You may want to mount JSON Server on a specific end-point, for example /api
