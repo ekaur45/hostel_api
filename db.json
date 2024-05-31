@@ -1,0 +1,34 @@
+{
+    "hostels":[
+        {
+            "id":"a1bc",
+            "images":[],
+            "name":"",
+            "price":4000,
+            "type":"Single bed",
+            "duration":"Per month",
+            "location":"",
+            "rating":4.3,
+            "amenities":[],
+            "hostelCategory":"near"
+        },
+        {
+            "id":"a1bd",
+            "images":[],
+            "name":"",
+            "price":4000,
+            "type":"Single bed",
+            "duration":"Per month",
+            "location":"",
+            "rating":4.3,
+            "amenities":[],
+            "hostelCategory":"recommended"
+        }
+    ],
+    "users":[{
+        "id":"a1bc",
+        "firstName":"john",
+        "lastname":"doe",
+        "picture":""
+    }]
+}
